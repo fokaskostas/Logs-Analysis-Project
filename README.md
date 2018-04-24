@@ -23,7 +23,7 @@ Next, download the data [here](https://d17h27t6h515a5.cloudfront.net/topher/2016
 
 ### Create the necessary tables and views:
 
-Create view pop using `ccreate view pop as Select title, count(*) as views from articles, log where log.path = concat('/article/', articles.slug) group by articles.title order by views desc;` 
+Create view pop using `create view pop as Select title, count(*) as views from articles, log where log.path = concat('/article/', articles.slug) group by articles.title order by views desc;` 
 
 ### Run the queries:
 
